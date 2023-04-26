@@ -1,6 +1,7 @@
+package ejercicios;
 import java.util.Scanner;
 
-public class AngelaPeña {
+public class AngelaPeña{
 
     /*
      * ahora defino un vector de caracteres especiales o signos que voy a
@@ -15,7 +16,7 @@ public class AngelaPeña {
     public static String[] abecedario = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",
             "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", };
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         final int ENCRIPTAR =1;
         final int DESENCRIPTAR=2;
@@ -44,7 +45,7 @@ public class AngelaPeña {
         sc.close();
     }
 
-    public static String encriptar_palabra_202310483(String palabra) {
+    public String encriptar_palabra_202310483(String palabra) {
         /*
          * Esta funcion recibe una palabra para encriptarla, primero toma la palabra
          * ingresada y la vuelve al reves, luego toma la

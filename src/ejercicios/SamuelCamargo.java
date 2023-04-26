@@ -1,4 +1,5 @@
-public class SamuelCastro {
+package ejercicios;
+public class SamuelCamargo {
     public static void main(String[] args) {
         
     }

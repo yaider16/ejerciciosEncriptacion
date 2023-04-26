@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class EliasCamargo {
     //Definimos el alfabeto
     public static String[] abcd = new String[] {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
-    public static void main(String[] args) {
+    public void main(String[] args) {
         
         //Conectamos el programa con el teclado
         Scanner teclado = new Scanner(System.in);
