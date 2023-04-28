@@ -1,20 +1,41 @@
 package ejercicios;
 
+import java.util.Scanner;
+
 public class TomasEspinel {
 
     public static String[] abc = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
     "t", "u", "v","w","x", "y", "z" };// array con abecedario
 
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        String encriptado =encriptacion("alejandro", 1, false); 
+        System.out.print("Palabra: ");
+        String palabra = sc.nextLine();
+
+        System.out.print("Movimiento(número): ");
+        int movimiento= sc.nextInt();
+
+        System.out.print("Adelante 1, Atrás 2: ");
+        int adelanteAtras = sc.nextInt();
+        boolean desicion = false;
+
+        if (adelanteAtras==1) {
+            desicion=true;
+        }else if(adelanteAtras==2){
+            desicion=false;
+        }
+
+        String encriptado =encriptacion(palabra, movimiento, desicion); 
         System.out.println(encriptado);
 
-        String desencriptado=desencriptar(encriptado, 1, true);
-        System.out.println(desencriptado);
-
+        String desencriptado=desencriptar(encriptado, 1, !desicion);
         
+        System.out.println("Encriptado: "+ encriptado);
+        System.out.println("Desencriptado: "+ desencriptado);
+
+        sc.close();
     }
 
     public static int buscadorLugar(String letra) {// creamos metodo para asignar posicion a cada letra del abecedario
@@ -87,11 +108,8 @@ public class TomasEspinel {
                 if (desicion && letra.equals(abc[j])) {
 
                     if (j+numero>=abc.length) {
-                        System.out.println("entro1");
-                        System.out.println((j+numero)-abc.length);
                         desencriptado+= abc[(j+numero)-abc.length];
                     }else{
-                        System.out.println("entro2");
                         desencriptado+= abc[j+numero];
                     }
                 }

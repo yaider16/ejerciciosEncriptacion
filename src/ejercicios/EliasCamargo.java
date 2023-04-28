@@ -11,7 +11,7 @@ public class EliasCamargo {
         Scanner teclado = new Scanner(System.in);
         
         //Pedimos una palabra con la que trabajar
-        System.out.println("Ingrese una palabra");
+        System.out.print("Ingrese una palabra: ");
         String palabra = teclado.nextLine();
 
         //Hacemos uso del procedimiento guardado en otra clase
@@ -95,7 +95,6 @@ public class EliasCamargo {
         }
 
         String desencriptadoFinal ="";
-        System.out.println(desencriptado);
         for (int k = 0; k < desencriptado.length(); k++) {
 
             String letra = toString(desencriptado.charAt(k));

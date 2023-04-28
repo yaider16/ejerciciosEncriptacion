@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SamirYate {
 
     public static String abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    public static void main(String[] args) {
+    public void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
         System.out.print("De la palabra a desencriptar: ");

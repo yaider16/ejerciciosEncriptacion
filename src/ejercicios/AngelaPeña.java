@@ -18,28 +18,16 @@ public class AngelaPeña{
 
     public void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        final int ENCRIPTAR =1;
-        final int DESENCRIPTAR=2;
 
-        System.out.println("1 Para encriptar\n2 Para desencriptar");
-        int enc = sc.nextInt();
-
-        sc.nextLine();
         System.out.print("De la palabra: ");
         String palabra = sc.nextLine();
 
-        switch (enc) {
+        String encriptado = encriptar_palabra_202310483(palabra);
+        String desencriptado = desencriptar(encriptado);
+        System.out.println("La palabra encriptada es: "+ encriptado);
 
-            case ENCRIPTAR:
-                System.out.println("La palabra encriptada es: "+ encriptar_palabra_202310483(palabra));
-                break;
-        
-            case DESENCRIPTAR:
-                System.out.println("La palabra desencriptada es: "+ desencriptar(palabra));
-                break;
-            default:
-                break;
-        }
+        System.out.println("La palabra desencriptada es: "+ desencriptado);
+
 
 
         sc.close();
