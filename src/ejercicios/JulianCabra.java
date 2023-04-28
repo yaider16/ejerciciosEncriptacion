@@ -40,7 +40,7 @@ public class JulianCabra {
                     String desc2= desencriptado(enc);
 
 					System.out.println("Encriptación: "+ enc);
-                    System.out.println("Dese");
+                    System.out.println("Desencriptacion: "+ desc2);
 				break;
 				case LEON:
 					System.out.println("Introduzca la palabra");
@@ -48,7 +48,7 @@ public class JulianCabra {
 
                     String enc2= paraTigre(palabra2);
                     String desc= desencriptado(enc2);
-					System.out.println("Encriptación: "+ enc2);
+					System.out.println("Encriptación: "+ desc);
 				break;
 			}
 		}

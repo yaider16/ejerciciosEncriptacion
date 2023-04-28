@@ -3,11 +3,14 @@ import java.util.Scanner;
 import ejercicios.AngelaPeña;
 import ejercicios.DavidCruz;
 import ejercicios.EliasCamargo;
+import ejercicios.LauraCampiño;
+import ejercicios.LauraCorrea;
 import ejercicios.NicolCepeda;
 import ejercicios.SamirYate;
 import ejercicios.SamuelCamargo;
 import ejercicios.SamuelCastro;
 import ejercicios.SeleneDaza;
+import ejercicios.SergioCalderon;
 import ejercicios.TomasEspinel;
 
 public class App {
@@ -100,6 +103,9 @@ public class App {
                 break;
             
             case SERGIO:
+                SergioCalderon sergio = new SergioCalderon();
+                sergio.main(args);
+                System.out.println("\n\n\n");
                 break;
 
             case TOMAS:
@@ -109,7 +115,9 @@ public class App {
                 break;
 
             case LAURA2:
-
+                LauraCorrea laura = new LauraCorrea();
+                laura.main(args);
+                System.out.println("\n\n\n");
                 break;
 
             case JUAN:
