@@ -27,9 +27,11 @@ public class App {
             final int SELENE=11;
             final int SERGIO=12;
             final int TOMAS=13;
+            final int LAURA2=14;
+            final int JUAN=15;
 
             System.out.println("--------------Menú de los ejercicios de encriptación------------");
-            System.out.println("1. Angela Peña\n2 David Cruz\n3 EliasCamargo\n4 Julian Cabra\n5 Laura Campiño\n6 Manuel Cruz\n7 Nicol Cepeda\n8 Samir Yate\n9 Samuel Camargo\n10 Samuel Castro\n11 Selene Daza\n12 Sergio Calderón\n13 Para Tomas Espinel\n0 Para salir");
+            System.out.println("1. Angela Peña\n2 David Cruz\n3 EliasCamargo\n4 Julian Cabra\n5 Laura Campiño\n6 Manuel Cruz\n7 Nicol Cepeda\n8 Samir Yate\n9 Samuel Camargo\n10 Samuel Castro\n11 Selene Daza\n12 Sergio Calderón\n13 Para Tomas Espinel\n14 Para Laura Campiño\n15 Para Juan\n0 Para salir");
             System.out.print("Cual ejercicio desea hacer: ");
             int des = sc.nextInt();
 
@@ -80,6 +82,14 @@ public class App {
                     break;
 
                 case TOMAS:
+
+                    break;
+
+                case LAURA2:
+
+                    break;
+
+                case JUAN:
 
                     break;
                 

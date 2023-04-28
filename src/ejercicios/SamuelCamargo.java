@@ -18,6 +18,8 @@ public class SamuelCamargo {
 
         System.out.println("encriptado: "+encriptado);
         System.out.println("Desencriptado: " +desencriptado);
+
+        sc.close();
     }
 
     public static String encriptarPalabra(String palabraE) {
